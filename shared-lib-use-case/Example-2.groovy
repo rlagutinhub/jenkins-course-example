@@ -8,7 +8,7 @@ pipeline {
                 echo 'Hello Pipeline'
                 script {
                     def checkoutTool = new io.second.checkoutTools()
-                    def url = 'https://github.com/elestopadov/jenkins-course-example.git'
+                    def url = 'https://github.com/rlagutinhub/jenkins-course-example.git'
                     def branch = 'main'
                     checkoutTool.checkOutFrom(url, branch)
                 }
